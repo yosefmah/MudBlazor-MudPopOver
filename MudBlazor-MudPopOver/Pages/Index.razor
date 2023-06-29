@@ -1,0 +1,11 @@
+﻿@page "/"
+@inject NavigationManager Nav;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Click Menu below</h1>
+
+<MudMenu Label="Menu" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Material.Filled.KeyboardArrowDown" IconColor="Color.Secondary" AnchorOrigin="Origin.CenterLeft">
+    <MudMenuItem @onclick="@(() => Nav.NavigateTo("/counter"))">Now click this</MudMenuItem>
+</MudMenu>
+
